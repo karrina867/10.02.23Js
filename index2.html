@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            background-color: blue;
+            margin: 0;
+            border: 2px, solid,'white';
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //1
+        /*
+        class Auto{
+            constructor(color,marca,speed){
+                this.color = color;
+                this.marca = marca;
+                this.speed = speed;
+            }
+             getInformation = function(){
+                console.log(`Марка автомобиля: ${this.marca}`);
+                console.log(`Скорость автомобиля: ${this.speed} км/ч`);
+                console.log(`Цвет автомобиля: ${this.color}`);    
+             }
+        }
+        let car1 =new Auto('чёрный','БМВ',90);
+        car1.getInformation();
+        */
+       //2
+       /*
+        class Person{
+            #name;
+            #age;
+            constructor(pol){
+                this.#name;
+                this.#age;
+                this.pol = pol;
+            }
+            set Name(name){
+                this.#name = name;
+            }
+            set Age(age){
+                this.#age = age;
+            }
+            get Age1 (){
+                return this.#age;
+            }
+            get Name1(){
+                return this.#name;
+            }
+            get Pol(){
+                return this.pol;
+            }
+        }
+        let person1 = new Person('m');
+        person1.name = 'Alex';
+        person1.age = 43;
+        console.log(person1.name);
+        console.log(person1.age);
+        console.log(person1.pol);
+        */
+        //3
+
+        class Make{
+            constructor(width,textwindow,texth){
+                this.el = document.createElement('div');
+                document.body.append(this.el);
+                this._width = width;
+                this._text1 = textwindow;
+                this._text2 = texth;
+                this.el.classList.add('first');
+                this.el.innerHTML = 'textwindow';
+                this.el.innerHTML = 'texth';
+            }
+              setSize(width){
+                    this.el.style.width =`${width}px`;
+            }
+            get el(){
+                return this.el;
+            }
+        }
+        let Div = new Make('500,','Loren','Loren2');
+        
+    </script>
+</body>
+</html>
